@@ -15,7 +15,7 @@ export JAVA_HOME="$(/usr/libexec/java_home)"
 # export HADOOP_HEAPSIZE=2000
 
 # Extra Java runtime options.  Empty by default.
-# export HADOOP_OPTS=-server
+export HADOOP_OPTS="-Djava.security.krb5.realm= -Djava.security.krb.kdc="
 
 # Command specific options appended to HADOOP_OPTS when specified
 export HADOOP_NAMENODE_OPTS="-Dcom.sun.management.jmxremote $HADOOP_NAMENODE_OPTS"

@@ -4,5 +4,16 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
-
+  <property>
+    <name>mapred.job.tracker</name>
+    <value>localhost:54311</value>
+    <description>The host and port that the MapReduce job tracker runs
+      at.  If "local", then jobs are run in-process as a single map
+      and reduce task.
+    </description>
+  </property>
+  <property>
+    <name>mapred.local.dir</name>
+    <value>/data/mapred/</value>
+  </property>
 </configuration>
